@@ -29,7 +29,7 @@ The project is completely open-source! I’d be thrilled if you could help me tr
 
 ```
 // ==UserScript==
-// @name         Hide Shorts UI
+// @name         NoShorts
 // @match        https://www.youtube.com/*
 // @match        https://m.youtube.com/*
 // @run-at       document-start
