@@ -93,3 +93,7 @@ The project is completely open-source! I’d be thrilled if you could help me tr
   else document.addEventListener("DOMContentLoaded", start);
 })();
 ```
+### How to Contribute
+
+1. Fork the repository and create a feature branch (`git checkout -b feature/feature-name`).
+2. Make your changes and submit a Pull Request to the `main` branch.
