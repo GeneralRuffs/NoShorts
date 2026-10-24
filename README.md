@@ -30,14 +30,28 @@ The project is completely open-source! I’d be thrilled if you could help me tr
 ```
 // ==UserScript==
 // @name         NoShorts
+// @match        https://youtube.com/*
 // @match        https://www.youtube.com/*
 // @match        https://m.youtube.com/*
+// @match        https://youtu.be/*
 // @run-at       document-start
 // @grant        none
 // @icon         https://i.ibb.co/dJ75rdSw/noshorts.png
 // ==/UserScript==
 
 (function () {
+  const check = () => {
+    if (/^\/shorts\//.test(location.pathname)) {
+      location.replace("https://www.youtube.com/");
+    }
+  };
+
+  check();
+  document.addEventListener("yt-navigate-start", check);
+  document.addEventListener("yt-navigate-finish", check);
+  document.addEventListener("yt-page-data-updated", check);
+  setInterval(check, 1000);
+
   const style = document.createElement("style");
   style.textContent = `
     ytd-guide-entry-renderer:has(a[href*="/shorts"]),
