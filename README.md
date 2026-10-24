@@ -7,7 +7,7 @@ The project is completely open-source! I’d be thrilled if you could help me tr
 
 <h3>Guide on how to install</h3>
 
-**Prerequisite:** Install the **Tampermonkey®** extension in your browser.
+**Prerequisite:** Install the **Tampermonkey®** extension in your browser. [Official website](https://www.tampermonkey.net/)
 
 ---
 
