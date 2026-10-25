@@ -27,7 +27,10 @@ The project is completely open-source! I’d be thrilled if you could help me tr
 3. Select **"Dashboard"**.
 4. Drag and drop the downloaded file from your "Downloads" folder onto the dashboard page that opens.
 
-```
+<details>
+  <summary>Source code</summary>
+
+```javascript
 // ==UserScript==
 // @name         NoShorts
 // @match        https://youtube.com/*
@@ -107,6 +110,10 @@ The project is completely open-source! I’d be thrilled if you could help me tr
   else document.addEventListener("DOMContentLoaded", start);
 })();
 ```
+
+</details>
+
+
 ### How to Contribute
 
 1. Fork the repository and create a feature branch (`git checkout -b feature/feature-name`).
